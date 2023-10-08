@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empreendedorismo</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="Imagens/logonova.png" type="image/x-icon">
+    <script>
+        window.onload = function() {
+            window.location.href = '#cabeçalho'; 
+        };
+    </script>
+</head>
+<body>
+    <header id="cabeçalho">
+        <div class="inicio">
+            <div class="inicio-mobile">
+                <img id="burger" src="Imagens/menu-aberto.png" alt="Menu" onclick="clickMenu()">
+                <a href="https://www.cep.pr.gov.br/" target="_blank"><img id="logo" src="Imagens/logonova.png" alt="Logo-CEP"></a>
+            </div>
+            <div class="menu">
+                <div class="menu-mobile">
+                    <div class="navbar">
+                        <nav>
+                            <ul class="menu-list">
+                                <li><a href="index.html">Início</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                 </div>
+                <nav class="bar">
+                    <a href="https://www.cep.pr.gov.br/" target="_blank"><img id="logo-pc" src="Imagens/logonova.png" alt="Logo-CEP"></a>
+                    <div class="home">
+                        <h1>COLÉGIO ESTADUAL DO PARANÁ</h1>
+                        <ul class="menu-list">
+                            <li><a href="index.html">Início</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <input type="search" id="searchInput" placeholder="O que você procura?                                    🔍">   
+        </div>
+    </div>
+    <script>
+        function clickMenu() {
+            
+            let navbar = document.querySelector('.navbar')
+            
+            if(navbar.style.display == 'block') {
+                
+                navbar.style.display = 'none'
+                
+            } else {
+                
+                navbar.style.display = 'block'
+            }
+    
+        }
+
+        
+       
+    </script>
+ 
+

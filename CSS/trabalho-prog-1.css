@@ -1,0 +1,114 @@
+@media (min-width: 1001px) {
+    .tags {
+
+        background-color: #5c9797;
+        font-family: 'Geologica', sans-serif;
+        display: block;
+        
+    }
+    .tags h1 {
+
+        text-align: center;
+        padding: 20px;
+        font-size: 35px;
+    }
+    .tags ul {
+
+        padding: 0px 80px;
+    }
+    .tags li {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px 0px
+    }
+    .tags li p {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 3em;
+        padding-left: 30px;
+        color: #3b3b3b;
+    }
+
+    .imagem{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .tags hr {
+
+        border-color: rgba(0, 0, 0, 0.403);
+    }
+    .imagem img {
+
+        width: 700px;
+        height: 400px;
+        margin: 0px 40px 40px 40px;
+        box-shadow: rgba(0, 0, 0, 0.559) 13px 8px 8px;
+        border-radius: 15px;
+
+    }
+    .menu-list li:nth-child(2) {
+
+        border-right: none;
+        padding-right: 0px;
+
+    }
+}
+@media (max-width: 1000px) { 
+
+    .tags {
+
+        background-color: #5c9797;
+        font-family: 'Geologica', sans-serif;
+        display: block;
+        
+    }
+    .tags h1 {
+
+        text-align: center;
+        padding: 20px;
+        font-size: 35px;
+    }
+    .tags ul {
+
+        padding: 0px 80px;
+    }
+    .tags li {
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px 0px
+    }
+    .tags li p {
+        font-size: 16px;
+        font-weight: normal;
+        text-align: justify;
+        line-height: 1.5em;
+        padding: 10px 10px 0px 30px;
+        color: #3b3b3b;
+    }
+
+    .imagem{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .tags hr {
+
+        border-color: rgba(0, 0, 0, 0.403);
+    }
+    .imagem img {
+
+        width: 40%;
+        height: 40%;
+        padding: 0px;
+        margin: 20px 40px 40px 40px;
+        box-shadow: rgba(0, 0, 0, 0.559) 13px 8px 8px;
+        border-radius: 15px;
+
+    }
+
+}

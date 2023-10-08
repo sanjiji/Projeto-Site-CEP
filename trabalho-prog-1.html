@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação - Trabalho 1</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/robotica.css">
+    <link rel="stylesheet" href="CSS/trabalho-prog-1.css">
+    <link rel="shortcut icon" href="Imagens/logonova.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script>
+        window.onload = function() {
+            window.location.href = '#cabeçalho'; 
+        };
+    </script>
+</head>
+<body>
+    <header id="cabeçalho">
+    <div class="inicio">
+        <div class="inicio-mobile">
+                <img id="burger" src="Imagens/menu-aberto.png" alt="Menu" onclick="clickMenu()">
+                <a href="https://www.cep.pr.gov.br/" target="_blank"><img id="logo" src="Imagens/logonova.png" alt="Logo-CEP"></a>
+            </div>
+        <div class="menu">
+            <div class="menu-mobile">
+                    <div class="navbar">
+                        <nav>
+                            <ul class="menu-list">
+                                <li><a href="index.html">Início</a></li> 
+                                <li><a href="programacao.html">Programação</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <nav class="bar">
+                    <a href="https://www.cep.pr.gov.br/" target="_blank"><img id="logo-pc" src="Imagens/logonova.png" alt="Logo-CEP"></a>
+                    <div class="home">
+                        <h1>COLÉGIO ESTADUAL DO PARANÁ</h1>
+                        <ul class="menu-list">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="programacao.html">Programação</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <input type="search" id="searchInput" placeholder="O que você procura?                                    🔍">
+                
+                
+        </div>
+    </div>
+    <script>
+        function clickMenu() {
+            
+            let navbar = document.querySelector('.navbar')
+            
+            if(navbar.style.display == 'block') {
+                
+                navbar.style.display = 'none'
+                
+            } else {
+                
+                navbar.style.display = 'block'
+            }
+    
+        }
+       
+    </script>
+    </header>
+
+    <main>
+        <article class="tags">
+                <h1>Tags HTML</h1>
+                <ul>
+                    <li>Tag &lt;html&gt; &lt;/html&gt; 
+                        <p>Essa tag está sempre no começo e no fim da página web. Ela limita onde o código começa e termina.</p>
+                    </li> <hr>
+                    <li>Tag &lt;head&gt; &lt;/head&gt; 
+                        <p>Utilizada para definir o começo e o fim do cabeçalho de um documento HTML, a qual também contém informações gerais sobre o documento, incluindo títulos e links.</p>
+                    </li> <hr>
+                    <li>Tag &lt;body&gt; &lt;/body&gt; 
+                        <p>Indica para o navegador o corpo do documento HTML, ou seja, a parte principal da página web.</p>
+                    </li> <hr>
+                    <li>Tag &lt;meta&gt; 
+                        <p>Essa tag traz dados básicos sobre o documento, como autor e data de criação</p>
+                    </li> <hr>
+                    <li>Tag &lt;section&gt; &lt;/section&gt; 
+                        <p>É utilizada para definir seções em um documento, separando conteúdos.</p>
+                    </li> <hr>
+                    <li>Tag &lt;article&gt; &lt;/article&gt; 
+                        <p>Tag que define um conteúdo independente e completo de outros, artigos com conteúdos que fazem sentido por si só.</p>
+                    </li> <hr>
+                    <li>Tag &lt;div&gt; &lt;/div&gt; 
+                        <p>É usada para representar uma seção com conjunto links de navegação, dentro do documento atual ou para outro documento.</p>
+                    </li> <hr>
+                    <li>Tag &lt;title&gt; &lt;/title&gt; 
+                        <p>Define o título do documento HTML. Esse é o nome que é exibido no topo da janela.</p>
+                    </li> <hr>
+                    <li>Tag &lt;nav&gt; &lt;/nav&gt; 
+                        <p>É usada para representar uma seção com conjunto links de navegação, dentro do documento atual ou para outro documento.</p>
+                    </li>
+                </ul>
+                <div class="imagem"><img src="Imagens/foto-tag.jpg" alt="Foto-tags"></div>
+            </article> 
+
+
+        <section id="formulario">
+            <h2>Fale conosco!</h2>
+            <form action="https://formspree.io/f/meqboypg" method="POST">
+                
+                <div class="form">
+                    <div class="name-email">
+                        <label for="nome">Seu Nome:</label>
+                        <input type="text" name="name" id="nome" placeholder=" Digite seu nome" required autocomplete="name" autofocus>
+                        <label for="email">Seu E-mail:</label>
+                        <input type="email" name="mail" id="email" placeholder=" Digite seu email" required autocomplete="email">
+                    </div>
+                    <div class="msg">
+                        <label for="mensagem">Sua Mensagem:</label>
+                        <textarea name="message" id="mensagem" cols="30" rows="10" placeholder="  Digite aqui sua mensagem" required minlength="5" maxlength="100" ></textarea>
+                    </div>
+                </div>
+
+                <input type="submit" id="acionar" name="submeter" value="Enviar">
+        
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="text-footer">Trabalho desenvolvido na disciplina de programação</p> 
+        <p class="cep"><img src="Imagens/logonova.png" alt="Logo-CEP"> <a href="https://www.cep.pr.gov.br/">Colégio Estadual do Paraná</a></p>
+    </footer>
+</body>
+</html>

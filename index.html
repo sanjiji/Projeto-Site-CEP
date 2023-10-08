@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Grupo 1</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="Imagens/logonova.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script>
+        window.onload = function() {
+            window.location.href = '#cabeçalho'; 
+        };
+    </script>
+</head>
+<body>
+    <header id="cabeçalho">
+        <div class="inicio">
+            <div class="inicio-mobile">
+                <img id="burger" src="Imagens/menu-aberto.png" alt="Menu" onclick="clickMenu()">
+                <a href="https://www.cep.pr.gov.br/" target="_blank"><img id="logo" src="Imagens/logonova.png" alt="Logo-CEP"></a>
+            </div>
+            <div class="menu">
+                <div class="menu-mobile">
+                    <div class="navbar">
+                        <nav>
+                            <ul class="menu-list">
+                                <li><a href="empreendedorismo.html">Empreendedorismo</a></li>
+                                <li><a href="biotecnologia.html">Biotecnologia</a></li>
+                                <li><a href="programacao.html">Programação</a></li>
+                                <li><a href="robotica.html">Robótica</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                 </div>
+                <nav class="bar">
+                    <a href="https://www.cep.pr.gov.br/" target="_blank"><img id="logo-pc" src="Imagens/logonova.png" alt="Logo-CEP"></a>
+                    <div class="home">
+                        <h1>COLÉGIO ESTADUAL DO PARANÁ</h1>
+                        <ul class="menu-list">
+                            <li><a href="empreendedorismo.html">Empreendedorismo</a></li>
+                            <li><a href="biotecnologia.html">Biotecnologia</a></li>
+                            <li><a href="programacao.html">Programação</a></li>
+                            <li><a href="robotica.html">Robótica</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <input type="search" id="searchInput" placeholder="O que você procura?                                    🔍">   
+        </div>
+    </div>
+    <script>
+        function clickMenu() {
+            
+            let navbar = document.querySelector('.navbar')
+            
+            if(navbar.style.display == 'block') {
+                
+                navbar.style.display = 'none'
+                
+            } else {
+                
+                navbar.style.display = 'block'
+            }
+    
+        }
+       
+    </script>
+    </header>
+
+    <main>
+        <article>
+            <div class="texto">
+                <h1>Sobre o site</h1> <br>
+                <p>O intuito do site é o armazenamento de projetos e pesquisas do grupo 1, 2P, realizadas nas matérias de robótica, empreendedorismo e programação.</p>
+            </div>
+            <img src="Imagens/Robot-arm-bro.png" alt="Foto robótica">
+        </article> 
+        
+        <section id="slides">
+            <h2>Acompanhe as Novidades</h2>
+            <div class="slide-list">
+                <ul class="lista-fotos" style="left: calc(-400%);">
+                    <li>
+                        <a href="empreendedorismo.html">
+                            <img class="redondo" src="Imagens/brand-communication-amico.png" alt="Slide-2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="biotecnologia.html">
+                            <img class="redondo" src="Imagens/Biologist-amico.png" alt="Slide-3">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="programacao.html">
+                            <img class="redondo" src="Imagens/Open-source-amico.png" alt="Slide-4">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="robotica.html">
+                            <img class="redondo" src="Imagens/Robotics-pana.png" alt="Slide-1">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="bolinhas">
+                <input type="radio" class="slides-bolinha" name="bolinha" checked>
+                <input type="radio" class="slides-bolinha" name="bolinha">
+                <input type="radio" class="slides-bolinha" name="bolinha">
+                <input type="radio" class="slides-bolinha" name="bolinha">
+            </div>
+        </section>
+        <script>
+            
+        const slideControllers = document.querySelectorAll('.slides-bolinha');
+        const slidesList = document.querySelector('.lista-fotos');
+        let currentSlide = 0;
+
+        slideControllers.forEach((controller, index) => {
+            controller.addEventListener('click', () => {
+                currentSlide = index;
+                slidesList.style.left = `calc(${index} * -100%)`;
+            });
+        });
+
+        function autoChangeSlide() {
+            currentSlide = (currentSlide + 1) % slideControllers.length;
+            slideControllers[currentSlide].checked = true;
+            slidesList.style.left = `calc(${currentSlide} * -100%)`;
+        }
+
+        autoChangeSlide();
+        setInterval(autoChangeSlide, 10000);
+    
+        </script>
+        <section id="integrantes">
+            <h2>Quem somos?</h2>
+
+            <div class="int-1">
+                <figure>
+                    <img class="rafael" src="Imagens/rafael-foto.jpg" alt="Foto-Rafael">
+                    <figcaption>
+                        <strong>Rafael</strong> <br>
+                        Tenho 16 anos, gosto de jogar basquete, fazer academia, gosto de tênis.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="Imagens/Malcon-Foto.jpeg" alt="Foto-Malcon">
+                    <figcaption>
+                        <strong>Malcon</strong> <br>
+                        Tenho 16 anos, gosto de ler, e estudar música.
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="int-2">
+                <figure>
+                    <img class="milena" src="Imagens/Milena-foto.jpg" alt="Foto-Milena">
+                    <figcaption>
+                        <strong>Milena</strong> <br>
+                        Tenho 17 anos, gosto de mexer no celular, e escutar música.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="Imagens/Nicole-Foto.jpeg" alt="Foto-Nicole">
+                    <figcaption>
+                        <strong>Nicole</strong> <br>
+                        Tenho 16 anos, gosto de ler livros, comer, e ir ao parque.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="Imagens/Yasmin-Foto.jpeg" alt="Foto-Yasmin">
+                    <figcaption>
+                        <strong>Yasmin</strong> <br>
+                        Tenho 16 anos, gosto de ler, de tocar piano, e conhecer novos restaurantes.
+                    </figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <section id="formulario">
+            <h2>Fale conosco!</h2>
+            <form action="https://formspree.io/f/meqboypg" method="POST">
+                
+                <div class="form">
+                    <div class="name-email">
+                        <label for="nome">Seu Nome:</label>
+                        <input type="text" name="name" id="nome" placeholder=" Digite seu nome" required autocomplete="name" autofocus>
+                        <label for="email">Seu E-mail:</label>
+                        <input type="email" name="mail" id="email" placeholder=" Digite seu email" required autocomplete="email">
+                    </div>
+                    <div class="msg">
+                        <label for="mensagem">Sua Mensagem:</label>
+                        <textarea name="message" id="mensagem" cols="30" rows="10" placeholder="  Digite aqui sua mensagem" required minlength="5" maxlength="100" ></textarea>
+                    </div>
+                </div>
+
+                <input type="submit" id="acionar" name="submeter" value="Enviar">
+        
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="text-footer">Trabalho desenvolvido na disciplina de programação</p> 
+        <p class="cep"><img src="Imagens/logonova.png" alt="Logo-CEP"> <a href="https://www.cep.pr.gov.br/">Colégio Estadual do Paraná</a></p>
+    </footer>
+</body>
+</html>
