@@ -317,7 +317,7 @@ html, body
 			transition: opacity 0.5s ease, transform 0.5s ease;
 			opacity: 0;
 			transform: translatey(-50px);
-			color: $color-dark;
+			color: #2b4a4a;
 		}
 		
 		h2
@@ -349,8 +349,8 @@ html, body
 			border: 3px solid $color-dark;
 			padding: 10px 20px;
 			background-color: transparent;
-			color: $color-dark;
-			font-size: 30px;
+			color: #2b4a4acolor-dark;
+			font-size:;
 		}
 	}
 	
