@@ -1,0 +1,176 @@
+
+@media (min-width: 1001px) {
+    
+    .menu-list li:nth-child(1), .menu-list li:nth-child(2) {
+        border-right: 1px solid rgba(0, 0, 0, 0.678);
+        padding-right: 20px;
+    }
+    .menu-list li:nth-child(2) {
+        
+        border-right: none;
+        
+    }
+    .botao {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    #buttons {
+
+        background-color: #548e8e;
+        margin-top: 142px;
+
+    }
+    #buttons h1 {
+
+        font-family: 'Geologica', sans-serif;
+        text-align: center;
+        padding: 20px;
+        font-size: 35px;
+    }
+    .botao-col-1, .botao-col-2, .botao-col-3 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #psh, #tic, #tom{
+
+        margin-bottom: 70px;
+    }
+    button {
+
+        display: inline-block;
+        padding: 32px 50px;
+        font-family: 'Geologica', sans-serif;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;	
+
+        color: #eeeeee;
+        background-color: #5f5f5f;
+        border: none;
+        border-radius: 15px;
+        border: 1px solid rgb(0, 0, 0);
+        box-shadow: 4px 4px 0 2px #07070796;
+        margin: 40px;
+        transition: all 0.3s ease;
+          
+    }
+
+    button:hover {
+        
+        background-color: #d1d1d1;
+        color: black;
+        transition: all 0.3s ease;
+        
+    }
+
+    button:active {
+    background-color: #414141;
+    box-shadow: 2px 2px 0 2px #07070796;;
+    transition: all 0.2s ease;
+    }
+    
+
+} 
+
+@media (max-width: 1000px) { 
+
+    article .texto {
+
+        margin: auto;
+        padding-left: 50px;
+        width: 100%;
+    }
+    article:nth-child(2) .texto p {
+
+        margin-right: 20px;
+        margin-top: 2.7em;
+        
+    }
+    .texto p {
+        margin-top: 30px;
+        margin-right: 20px;
+        font-size: 1.1em;
+
+    }
+    .texto { 
+
+        margin-left: 0px;
+        padding: 0px;
+    }
+
+
+    .botao {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    #buttons {
+
+        background-color: #548e8e;
+    }
+    #buttons h1 {
+
+        font-family: 'Geologica', sans-serif;
+        text-align: center;
+        padding: 20px;
+        font-size: 32px;
+    }
+    .botao-col-1, .botao-col-2, .botao-col-3 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    button {
+
+        display: inline-block;
+        padding: 32px 50px;
+        font-family: 'Geologica', sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;	
+
+        color: #eeeeee;
+        background-color: #5f5f5f;
+        border: none;
+        border-radius: 15px;
+        border: 1px solid rgb(0, 0, 0);
+        box-shadow: 4px 4px 0 2px #07070796;
+        margin: 40px;
+          
+    }
+
+    button:hover {
+        
+        background-color: #9c9c9c;
+        color: rgb(6, 6, 6);
+        transition: all 0.3s ease;
+        
+
+    }
+    #tom {
+
+        margin-bottom: 70px;
+    }
+
+    button:active {
+    background-color: #414141;
+    box-shadow: 2px 2px 0 2px #07070796;
+    transition: all 0.2s ease;
+
+    }
+    
+
+}

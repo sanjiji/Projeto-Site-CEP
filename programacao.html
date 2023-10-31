@@ -29,7 +29,7 @@
                         <nav>
                             <ul class="menu-list">
                                 <li><a href="index.html">Início</a></li> 
-                                <li><a href="#buttons">Botões com sons</a></li>
+                                <li><a href="botoes.html">Botões com sons</a></li>
                                 <li><a href="trabalho-prog-1.html">Trabalho 1</a></li>
                             </ul>
                         </nav>
@@ -40,8 +40,8 @@
                     <div class="home">
                         <h1>COLÉGIO ESTADUAL DO PARANÁ</h1>
                         <ul class="menu-list">
-                            <li><a href="index.html">Início</a></li>
-                            <li><a href="#direcionar">Botões com sons</a></li>
+                            <li><a href="index.html">Início</a></li> 
+                            <li><a href="botoes.html">Botões com sons</a></li>
                             <li><a href="trabalho-prog-1.html">Trabalho 1</a></li>
                         </ul>
                     </div>
@@ -84,131 +84,10 @@
                 <h1>Pesquisa sobre comandos do site</h1>
                 <p>O intuito da pesquisa é compreender os principais pontos da programação, enfocando as bases de um site no quesito conceitos e suas funcionalidades.</p>
             </div>
-            <p id="direcionar"></p>
             <img class="image" src="Imagens/foto-prog-2.png" alt="Foto Programação">
         </article>
         
-        <section id="buttons">
-            <h1>Botões com sons</h1>
-            <div class="botao">
-                <div class="botao-col-1">
-                   <button id="pum" type="button">PUM</button>
-                   <audio id="PUM" src="audios/keyc.wav"></audio>
-                   <button id="puff" type="button">PUFF</button>
-                   <audio id="PUFF" src="audios/keya.wav"></audio>
-                   <button id="psh" type="button">PSH</button>
-                   <audio id="PSH" src="audios/keyz.wav"></audio>
-                </div>
-                <div class="botao-col-2">
-                   <button id="clap" type="button">CLAP</button>
-                   <audio id="CLAP" src="audios/keyw.wav"></audio>
-                   <button id="splash" type="button">SPLASH</button>
-                   <audio id="SPLASH" src="audios/keys.wav"></audio>
-                   <button id="tic" type="button">TIC</button>
-                   <audio id="TIC" src="audios/keyx.wav"></audio>
-                </div>
-                <div class="botao-col-3">
-                   <button id="tim" type="button">TIM</button>
-                   <audio id="TIM" src="audios/keye.wav"></audio>
-                   <button id="toim" type="button">TOIM</button>
-                   <audio id="TOIM" src="audios/keyd.wav"></audio>
-                   <button id="tom" type="button">TOM</button>
-                   <audio id="TOM" src="audios/keyq.wav"></audio>
-                </div>
-            </div>
-            <script>
-                let pum = document.querySelector('#pum');
-                let audioPum = document.querySelector('#PUM');
-
-                let puff = document.querySelector('#puff');
-                let audioPuff = document.querySelector('#PUFF');
-
-                let psh = document.querySelector('#psh');
-                let audioPsh = document.querySelector('#PSH');
-
-                let clap = document.querySelector('#clap');
-                let audioClap = document.querySelector('#CLAP');
-
-                let splash = document.querySelector('#splash');
-                let audioSplash = document.querySelector('#SPLASH');
-
-                let tic = document.querySelector('#tic');
-                let audioTic = document.querySelector('#TIC');
-
-                let tim = document.querySelector('#tim');
-                let audioTim = document.querySelector('#TIM');
-
-                let toim = document.querySelector('#toim');
-                let audioToim = document.querySelector('#TOIM');
-
-                let tom = document.querySelector('#tom');
-                let audioTom = document.querySelector('#TOM');
-
-                pum.addEventListener('click', () => {
-                    
-                    audioPum.currentTime = 0;
-                    audioPum.play();
-
-                });
-
-                puff.addEventListener('click', () => {
-                    
-                    audioPuff.currentTime = 0;
-                    audioPuff.play();
-
-                });
-                
-                psh.addEventListener('click', () => {
-                    
-                    audioPsh.currentTime = 0;
-                    audioPsh.play();
-
-                });
-
-                clap.addEventListener('click', () => {
-                    
-                    audioClap.currentTime = 0;
-                    audioClap.play();
-
-                });
-
-                splash.addEventListener('click', () => {
-                    
-                    audioSplash.currentTime = 0;
-                    audioSplash.play();
-
-                });
-
-                tic.addEventListener('click', () => {
-                    
-                    audioTic.currentTime = 0;
-                    audioTic.play();
-
-                });
-
-                tim.addEventListener('click', () => {
-                    
-                    audioTim.currentTime = 0;
-                    audioTim.play();
-
-                });
-
-                toim.addEventListener('click', () => {
-                    
-                    audioToim.currentTime = 0;
-                    audioToim.play();
-
-                });
-
-                tom.addEventListener('click', () => {
-                    
-                    audioTom.currentTime = 0;
-                    audioTom.play();
-
-                });
-                
-            </script>
-        </section>
+        
 
         <section id="formulario">
             <h2>Fale conosco!</h2>
@@ -240,20 +119,3 @@
 </body>
 </html>
 
-
-<meta name="viewport" content="width=device-width,user-scalable=no">
-
-<div id="container">
-	<div id="game"></div>
-	<div id="score">0</div>
-	<div id="instructions">Click (or press the spacebar) to place the block</div>
-	<div class="game-over">
-		<h2>Game Over</h2>
-		<p>You did great, you're the best.</p>
-		<p>Click or spacebar to start again</p>
-	</div>
-	<div class="game-ready">
-		<div id="start-button">Start</div>
-		<div></div>
-	</div>
-</div>
