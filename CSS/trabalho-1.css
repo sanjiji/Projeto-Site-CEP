@@ -1,4 +1,4 @@
-@media (min-width: 1001px) {
+@media (min-width: 1301px) {
 
     article:nth-child(1) {
 
@@ -48,7 +48,7 @@
     }
 
 }
-@media (max-width: 1000px) { 
+@media (max-width: 1300px) { 
 
     article:nth-child(1) {
 
