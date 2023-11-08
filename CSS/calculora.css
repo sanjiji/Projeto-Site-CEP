@@ -4,9 +4,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 5;
     font-size: 1.8;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+
   }
   
   .calculator {
@@ -35,9 +33,8 @@ body {
     box-shadow: inset 0 1 4 0 rgba(0, 0, 0, 0.2);
   }
   
-  .buttons {}
   
-  .operators {}
+  
   
   .operators div {
     display: inline-block;
