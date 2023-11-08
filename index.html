@@ -76,7 +76,61 @@
             <img src="Imagens/Robot-arm-bro.png" alt="Foto robótica">
         </article> 
         
+        <section id="slides">
+            <h2>Acompanhe as Novidades</h2>
+            <div class="slide-list">
+                <ul class="lista-fotos" style="left: calc(-400%);">
+                    <li>
+                        <a href="empreendedorismo.html">
+                            <img class="redondo" src="Imagens/brand-communication-amico.png" alt="Slide-2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="biotecnologia.html">
+                            <img class="redondo" src="Imagens/Biologist-amico.png" alt="Slide-3">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="programacao.html">
+                            <img class="redondo" src="Imagens/Open-source-amico.png" alt="Slide-4">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="robotica.html">
+                            <img class="redondo" src="Imagens/Robotics-pana.png" alt="Slide-1">
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
+            <div id="bolinhas">
+                <input type="radio" class="slides-bolinha" name="bolinha" checked>
+                <input type="radio" class="slides-bolinha" name="bolinha">
+                <input type="radio" class="slides-bolinha" name="bolinha">
+                <input type="radio" class="slides-bolinha" name="bolinha">
+            </div>
+        </section>
+        <script>
+            
+        const slideControllers = document.querySelectorAll('.slides-bolinha');
+        const slidesList = document.querySelector('.lista-fotos');
+        let currentSlide = 0;
+
+        slideControllers.forEach((controller, index) => {
+            controller.addEventListener('click', () => {
+                currentSlide = index;
+                slidesList.style.left = `calc(${index} * -100%)`;
+            });
+        });
+
+        function autoChangeSlide() {
+            currentSlide = (currentSlide + 1) % slideControllers.length;
+            slideControllers[currentSlide].checked = true;
+            slidesList.style.left = `calc(${currentSlide} * -100%)`;
+        }
+
+        autoChangeSlide();
+        setInterval(autoChangeSlide, 10000);
     
         </script>
         <section id="integrantes">
